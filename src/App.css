@@ -1,0 +1,168 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #e0f7fa;
+  background-color: #001f3f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  background-color: #001f3f;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Header */
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #4fc3f7;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #b3e5fc;
+}
+
+/* Dashboard */
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  margin-bottom: 2rem;
+}
+
+.refresh-btn {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.refresh-btn:hover {
+  background-color: #0277bd;
+}
+
+.refresh-btn:disabled {
+  background-color: #546e7a;
+  cursor: not-allowed;
+}
+
+.location-info {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #81d4fa;
+}
+
+.error-banner {
+  background-color: #d32f2f;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.fact-card {
+  background-color: #003c6c;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.fact-card:hover {
+  transform: translateY(-5px);
+}
+
+.fact-card h3 {
+  margin-top: 0;
+  color: #81d4fa;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-content {
+  margin-top: 1rem;
+}
+
+.value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.unit {
+  font-size: 1rem;
+  color: #b3e5fc;
+  margin-left: 0.2rem;
+}
+
+.description {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #e1f5fe;
+}
+
+.spinner {
+  color: #81d4fa;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #0277bd;
+  color: #81d4fa;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.links a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
